@@ -13,6 +13,7 @@ export const getCurrentPageUrl = () => {
 export const pageToLogin = () => {
   const path = getCurrentPageUrl()
   if (!path.includes('login')) {
+    // todo create login page
     Taro.navigateTo({ url: '/pages/login/login' })
   }
 }
